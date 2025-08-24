@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Diet Affordability Dashboard - Project Summary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* Light Grey */
+            color: #212121; /* Dark Text */
+        }
+        .header-bar {
+            background-color: #1a73e8; /* Google Blue */
+        }
+        .main-heading {
+            color: #1a73e8; /* Google Blue */
+        }
+        .sub-heading {
+            color: #34a853; /* Google Green */
+        }
+        .card {
+            background-color: #ffffff;
+            border-left: 5px solid #34a853; /* Green accent */
+        }
+        .button-primary {
+            background-color: #4285f4; /* Lighter Blue */
+            color: white;
+        }
+        .button-primary:hover {
+            background-color: #1a73e8; /* Darker Blue on hover */
+        }
+        .chart-placeholder img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-bar text-white py-6 mb-10 shadow-lg">
+        <div class="container mx-auto text-center px-4">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">Healthy Diet Affordability Dashboard</h1>
+            <p class="text-lg md:text-xl font-semibold mb-4">by <span class="text-[#ffeb3b] font-extrabold">Owais Ali Shah</span></p>
+            <a href="https://econ-owaisali.shinyapps.io/Healthy-Diet-Dashboard/" target="_blank" class="inline-flex items-center justify-center px-6 py-3 rounded-lg text-lg button-primary hover:shadow-xl transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75v-1.5m-1.5-7.5l.004-.004c.3-.08.5-.278.5-.494V8.25a2.25 2.25 0 00-2.25-2.25h-5.25c-.216 0-.414.2-.494.5l-.004.004M19.5 12l2.25-2.25l-2.25-2.25M19.5 12H15" />
+                </svg>
+                <span>Visit the Full Interactive Dashboard</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 md:px-8">
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold main-heading mb-6 text-center md:text-left">Project Overview</h2>
+            <div class="card p-6 rounded-lg shadow-md">
+                <p class="text-gray-700 leading-relaxed">
+                    The **Healthy Diet Affordability Dashboard** is an interactive R Shiny application designed to visualize and analyze data related to the cost and accessibility of a healthy diet in Pakistan. Leveraging comprehensive data, this tool empowers policymakers, researchers, and the public to explore crucial trends, identify key indicators, and understand the economic barriers to nutrition. It provides a data-driven foundation for informed decisions aimed at improving public health and food security.
+                </p>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold main-heading mb-6 text-center md:text-left">Key Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold sub-heading mb-3">Intuitive Overview</h3>
+                    <p class="text-gray-700">Get instant insights into total indicators tracked, time periods covered, data points, and average values for key metrics.</p>
+                </div>
+                <div class="card p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold sub-heading mb-3">Dynamic Trend Analysis</h3>
+                    <p class="text-gray-700">Explore how different healthy diet indicators change over time with interactive line, area, and bar charts.</p>
+                </div>
+                <div class="card p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold sub-heading mb-3">Comprehensive Data Explorer</h3>
+                    <p class="text-gray-700">Browse, filter, and search the raw dataset efficiently, with options to download the data.</p>
+                </div>
+                <div class="card p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold sub-heading mb-3">Bilingual Interface</h3>
+                    <p class="text-gray-700">Seamlessly switch between English and Urdu to cater to a broader audience.</p>
+                </div>
+                <div class="card p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold sub-heading mb-3">Professional UI/UX</h3>
+                    <p class="text-gray-700">A clean, modern design with a calming color palette ensures an engaging and user-friendly experience.</p>
+                </div>
+                <div class="card p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold sub-heading mb-3">Data-Driven Insights</h3>
+                    <p class="text-gray-700">Quick insights sections provide contextual summaries and highlight crucial trends from the data.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold main-heading mb-6 text-center md:text-left">Visual Highlights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <h3 class="text-xl font-semibold sub-heading mb-4">Average Value per Indicator</h3>
+                    <div class="chart-placeholder w-full h-64 md:h-80 lg:h-96">
+                        <img src="https://placehold.co/800x400/1a73e8/ffffff?text=Bar+Chart%0AAverage+Value+per+Indicator" alt="Bar chart showing average values for different healthy diet indicators" />
+                    </div>
+                    <p class="text-gray-700 text-center mt-4">This bar chart provides a comparative view of the average values across various indicators, offering a quick understanding of their magnitudes.</p>
+                </div>
+                <div class="card p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <h3 class="text-xl font-semibold sub-heading mb-4">Indicator Trends Over Time</h3>
+                    <div class="chart-placeholder w-full h-64 md:h-80 lg:h-96">
+                        <img src="https://placehold.co/800x400/34a853/ffffff?text=Line+Chart%0AIndicator+Trends+Over+Time" alt="Line chart showing the trend of a selected healthy diet indicator over years" />
+                    </div>
+                    <p class="text-gray-700 text-center mt-4">Observe the temporal progression of chosen indicators, highlighting upward or downward trends in healthy diet affordability or cost.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold main-heading mb-6 text-center md:text-left">Technologies Utilized</h2>
+            <div class="card p-6 rounded-lg shadow-md">
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li><strong class="sub-heading">R Shiny:</strong> Core framework for the interactive web application.</li>
+                    <li><strong class="sub-heading">shinydashboard:</strong> For creating the structured dashboard layout.</li>
+                    <li><strong class="sub-heading">dplyr & tidyr:</strong> Powerful tools for data manipulation and cleaning.</li>
+                    <li><strong class="sub-heading">highcharter:</strong> For generating visually appealing and interactive charts.</li>
+                    <li><strong class="sub-heading">DT:</strong> For robust and feature-rich interactive data tables.</li>
+                    <li><strong class="sub-heading">rsconnect:</strong> For seamless deployment to shinyapps.io.</li>
+                    <li><strong class="sub-heading">HTML, CSS (Custom & bslib):</strong> For custom styling and responsive design.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold main-heading mb-6 text-center md:text-left">Deployment</h2>
+            <div class="card p-6 rounded-lg shadow-md">
+                <p class="text-gray-700 leading-relaxed">
+                    This dashboard is deployed on <a href="https://www.shinyapps.io/" target="_blank" class="text-blue-600 hover:underline font-medium">shinyapps.io</a>, ensuring public accessibility and reliable performance. The deployment process involved configuring the `rsconnect` package to seamlessly push the R Shiny application and its data to the cloud.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-3xl font-bold main-heading mb-6 text-center md:text-left">About the Author</h2>
+            <div class="card p-6 rounded-lg shadow-md">
+                <p class="text-gray-700 leading-relaxed">
+                    This project is a testament to the skills and dedication of <strong class="sub-heading">Owais Ali Shah</strong>, an economics graduate and a passionate data analyst. Owais specializes in transforming complex economic data into clear, actionable insights through innovative data visualization and policy research. His commitment lies in building structured economic models and dynamic dashboards that serve public and educational purposes.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center py-6 mt-10">
+        <p>&copy; 2025 Owais Ali Shah. All rights reserved.</p>
+        <p class="mt-2">Connect with me on <a href="https://www.linkedin.com/in/owaisali-econ" target="_blank" class="text-blue-400 hover:underline">LinkedIn</a></p>
+    </footer>
+
+</body>
+</html>
